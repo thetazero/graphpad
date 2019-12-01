@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="preconnect" href="http://192.168.86.94:3000/api">
+  <link rel="preconnect" href="https://storage.googleapis.com">
+  <title>graphpad</title>
+  <style>
+    .maincard {
+      max-width: 600px;
+      margin: 60px auto !important;
+    }
+
+    .select-wrapper+label,
+    input[type=text]:not(.browser-default)+label:after {
+      top: 5px !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .maincard {
+        margin: 0px !important;
+      }
+    }
+
+    @media only screen and (max-width:600px) and (min-height:calc(100vh-10px)) {
+      #footer {
+        display: none;
+      }
+    }
+
+    .collection .collection-item.avatar i.circle {
+      font-size: 24px !important;
+    }
+
+    .select-none {
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but graphpad doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </noscript>
+  <!-- <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link async href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
