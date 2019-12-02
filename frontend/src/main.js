@@ -5,14 +5,10 @@ import store from './store'
 import './registerServiceWorker'
 
 Vue.config.productionTip = false
-Vue.prototype.api = 'http://192.168.86.94:3000/api/'
-Vue.prototype.$gapi = async function (query) {
-  let res = await window.fetch(this.api + query)
-  let data = await res.json()
-  return data
-}
+// Vue.prototype.api = 'http://192.168.86.94:3000/api/'
 const icons = {
-  Person: "face"
+  Person: "face",
+  Date: "calendar_today"
 }
 Vue.prototype.$pick_icon = function (label) {
   if (label.length && label[0] in icons)

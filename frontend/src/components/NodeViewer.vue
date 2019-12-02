@@ -8,6 +8,14 @@
       :edit="edit"
       :edges="edges"
     />
+    <Date
+      v-if="type == 'Date'"
+      :data="data"
+      :id="id"
+      :type="type"
+      :edit="edit"
+      :edges="edges"
+    />
   </div>
 </template>
 
@@ -16,6 +24,6 @@ import Person from "@/components/nodes/Person.vue";
 export default {
   name: "NodeViewer",
   props: ["id", "edit", "data", "type", "edges"],
-  components: { Person }
+  components: { Person, Date: () => import("@/components/nodes/Date.vue") }
 };
 </script>

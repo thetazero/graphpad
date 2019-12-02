@@ -15,9 +15,7 @@ export default {
     };
   },
   created() {
-    this.$gapi("").then(data => {
-      this.nodes = data;
-    });
+    this.$store.getters.getNodes().then(data => (this.nodes = data));
   },
   components: { NodeCollection }
 };
